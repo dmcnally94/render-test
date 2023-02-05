@@ -3,6 +3,8 @@ import plotly.express as px
 import pandas as pd
 
 test_app = Dash(__name__)
+server = test_app.server
+test_app.title = 'Housing Profile Dashboard'
 
 colors = {
     'background': '#111111',
