@@ -2,7 +2,7 @@ from dash import Dash, dcc, html
 import plotly.express as px
 import pandas as pd
 
-app = Dash(__name__)
+test_app = Dash(__name__)
 
 colors = {
     'background': '#111111',
@@ -25,7 +25,7 @@ fig.update_layout(
     font_color=colors['text']
 )
 
-app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
+test_app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
     html.H1(
         children='Hello Dash',
         style={
@@ -46,4 +46,4 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
 ])
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    test_app.run_server(debug=True)
