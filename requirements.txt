@@ -1,0 +1,5 @@
+#Requirements
+dash == 2.8.1
+pandas == 1.2.0
+plotly == 5.13.0
+gunicorn
